@@ -1,0 +1,7 @@
+This is an example of a firmware for atmel atmega8. Just blinks led at PB0 (pin 14).
+
+Usage:
+  make led_blink.hex
+  make fuses
+  make flash
+
