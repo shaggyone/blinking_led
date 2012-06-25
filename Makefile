@@ -3,8 +3,8 @@
 
 TARGET=atmega8
 # Use http://www.engbedded.com/fusecalc for calculation of fuses.
-HFUSE=0x91
 LFUSE=0x04
+HFUSE=0xD1
 CLOCK=8000000
 
 ISP=usbasp
