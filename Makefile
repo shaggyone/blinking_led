@@ -2,6 +2,7 @@
 #
 
 TARGET=atmega8
+# Use http://www.engbedded.com/fusecalc for calculation of fuses.
 HFUSE=0x91
 LFUSE=0x04
 CLOCK=8000000
@@ -65,8 +66,7 @@ disasm:	led_blink.bin
 	avr-objdump -d led_blink.bin
 
 cpp:
-	$(COMPILE) led_blink.c
-#	$(COMPILE) -E led_blink.c
+	$(COMPILE) -E led_blink.c
 
 flash:
 	avrdude -c ${ISP} -p ${TARGET} -U flash:w:led_blink.hex
