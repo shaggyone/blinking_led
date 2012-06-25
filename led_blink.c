@@ -8,8 +8,6 @@ comments */
 #include <util/delay.h>
 
 int main (void) { // (2)
-  int i, j;
-
   DDRB = 0x01;//PORTB = 0x03;
   while(1) {
     PORTB = 1;
